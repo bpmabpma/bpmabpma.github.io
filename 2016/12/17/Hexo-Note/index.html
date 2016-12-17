@@ -10,7 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="This is a Testrm -rf /">
+        <meta name="description" content="I have been a while to write any blog. Anyway, I am back, and I start this blog to be my starting point.If you like to read my old blogs, you can go t">
     
 
     <!--Author-->
@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="My new Post"/>
+        <meta property="og:title" content="How to use Hexo to write a blog"/>
     
 
     <!--Open Graph Description-->
@@ -42,7 +42,7 @@
 
     <!-- Title -->
     
-    <title>My new Post - 比爾的宅宅屋</title>
+    <title>How to use Hexo to write a blog - 比爾的宅宅屋</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -136,12 +136,12 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>My new Post</h1>
+                    <h1>How to use Hexo to write a blog</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
-                        2016-12-12
+                        2016-12-17
                     </span>
                 </div>
             </div>
@@ -161,7 +161,7 @@
                         
 
 
-<a href="/tags/aaa/">#aaa</a>
+<a href="/tags/hexo/">#hexo</a>
 
 
                     
@@ -176,8 +176,20 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h2 id="This-is-a-Test"><a href="#This-is-a-Test" class="headerlink" title="This is a Test"></a>This is a Test</h2><pre><code class="bash">rm -rf /
-</code></pre>
+                <p>I have been a while to write any blog. Anyway, I am back, and I start this blog to be my starting point.<br>If you like to read my old blogs, you can go to <a href="http://the-it-fellow.blogspot.tw/" target="_blank" rel="external">史萊姆等級碼農</a>.</p>
+<h2 id="What-the-hell-is-Hexo"><a href="#What-the-hell-is-Hexo" class="headerlink" title="What the hell is Hexo?"></a>What the hell is Hexo?</h2><p>Simplestly, it’s a blog framework. The most import reason which I choose Hexo is it supports markdown, and Hexo is based on Node.js.<br>And, it is very easy to use. </p>
+<h2 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h2><p>Before you install Hexo, you must install Node. The best way to install Node is using nvm.<br>You also can read the Hexo offical website to understand how to install Node, npm, nvm.<br>Or, just google for them. Because I alread install them, so I skip this step.</p>
+<p>These commands are as same as <a href="https://hexo.io/" target="_blank" rel="external">offical website</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line">hexo init blog</div><div class="line"><span class="built_in">cd</span> blog</div><div class="line">npm install</div><div class="line">hexo server</div></pre></td></tr></table></figure></p>
+<p>Then, go to <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>, you can see the Default website.</p>
+<h2 id="First-blog"><a href="#First-blog" class="headerlink" title="First blog"></a>First blog</h2><p>Create a new post<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure></p>
+<p>Generate static files<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure></p>
+<p>If you don’t start the server, and you want to see result on localhost.<br>You can start the localhost sever by the following command.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure></p>
+<p>Then, go to <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>, you can see the first your post.</p>
+<h2 id="Change-theme"><a href="#Change-theme" class="headerlink" title="Change theme"></a>Change theme</h2><p>Pick a your farvite theme on <a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo themes</a></p>
+<p>I just choose Daily theme be my example.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/GallenHu/hexo-theme-Daily.git themes/Daily</div><div class="line">npm install --save hexo-renderer-sass</div></pre></td></tr></table></figure></p>
+<p>Change the theme properties in the __config.yml file.<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># theme: landscape</span></div><div class="line"><span class="attr">theme:</span> Daily</div></pre></td></tr></table></figure></p>
+<h2 id="Deploy-to-github-page"><a href="#Deploy-to-github-page" class="headerlink" title="Deploy to github page"></a>Deploy to github page</h2><p>If you want to deploy your blog to Github Page, Hexo is a greate chose to do it.<br>Otherwise, Hexo is not only support Github Page, it also suppot others, like Heroku, etc.<br>First you need to create a github page repository. You can following the instructions on <a href="https://pages.github.com/" target="_blank" rel="external">Github Page</a>.</p>
+<p>Deploy to remote sites.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
 
 
                 
