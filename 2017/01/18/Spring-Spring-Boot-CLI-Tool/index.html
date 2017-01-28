@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Deploying Spring Boot Applications to Herokuthis article lets me aware the Spring Boot CLI tool. So, I write down the short note for remember the comm">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Bill Lin">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="[Spring]Spring Boot CLI Tool"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Bill ASAP"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>[Spring]Spring Boot CLI Tool - Bill ASAP</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Configurable Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/bpmabpma">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>[Spring]Spring Boot CLI Tool</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2017-01-18
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Spring/">#Spring</a> <a href="/tags/Spring-Boot/">#Spring Boot</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p><a href="https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku" target="_blank" rel="external">Deploying Spring Boot Applications to Heroku</a><br>this article lets me aware the Spring Boot CLI tool. So, I write down the short note for remember the commands and ideas.</p>
+<h2 id="Prerequirement"><a href="#Prerequirement" class="headerlink" title="Prerequirement"></a>Prerequirement</h2><ul>
+<li>Java</li>
+<li>Gradle</li>
+<li>Groovy</li>
+</ul>
+<p>Because I want to try something new, I install these stuff which is not on my Mac.<br>And, I try to use SDKMAN to install Java and Groovy.</p>
+<h3 id="Install-SDKMAN"><a href="#Install-SDKMAN" class="headerlink" title="Install SDKMAN"></a>Install SDKMAN</h3><p>If you use Windows, you need to install Cygwin(I use this before, so I recommend this one.).<br><a href="http://sdkman.io/install.html" target="_blank" rel="external">Installation Guide</a>.<br><a href="http://sdkman.io/usage.html#installdefault" target="_blank" rel="external">SDKMAN Doc</a>.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">curl <span class="_">-s</span> <span class="string">"https://get.sdkman.io"</span> | bash</div><div class="line"><span class="built_in">source</span> <span class="string">"<span class="variable">$HOME</span>/.sdkman/bin/sdkman-init.sh"</span></div><div class="line">sdk version</div></pre></td></tr></table></figure></p>
+<h3 id="Install-Java"><a href="#Install-Java" class="headerlink" title="Install Java"></a>Install Java</h3><p>Actually, you can use the install file to install on Mac and Windows or package(yum or apt-get) command on Linux<br>But, I want to try the new stuff, so SDKMAN is here. </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#install java</span></div><div class="line">sdk install java </div><div class="line"><span class="comment">#check sdkman current java version, 8u111 now</span></div><div class="line">sdk current java</div><div class="line"><span class="comment">#check real java version </span></div><div class="line">java -version</div><div class="line"><span class="comment">#check real java path</span></div><div class="line"><span class="built_in">which</span> java</div></pre></td></tr></table></figure>
+<h3 id="Install-Groovy"><a href="#Install-Groovy" class="headerlink" title="Install Groovy"></a>Install Groovy</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sdk install groovy</div><div class="line"><span class="comment"># 2.4.8</span></div><div class="line">groovy -v</div><div class="line">gvm <span class="built_in">help</span></div></pre></td></tr></table></figure>
+<h3 id="Install-Gradle"><a href="#Install-Gradle" class="headerlink" title="Install Gradle"></a>Install Gradle</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sdk install gradle</div><div class="line"><span class="comment">#3.3</span></div><div class="line">sdk current gradle</div></pre></td></tr></table></figure>
+<h2 id="Instal-Spring-Boot-CLI"><a href="#Instal-Spring-Boot-CLI" class="headerlink" title="Instal Spring Boot CLI"></a>Instal Spring Boot CLI</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#Awesome!!!</span></div><div class="line">sdk install springboot</div><div class="line"><span class="comment">#1.4.3</span></div><div class="line">spring --version</div></pre></td></tr></table></figure>
+<h2 id="Build-a-Simple-Project"><a href="#Build-a-Simple-Project" class="headerlink" title="Build a Simple Project"></a>Build a Simple Project</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">spring init --dependencies=web,data-jpa my-project</div></pre></td></tr></table></figure>
+<p>But, I think in this article I make a mistake. It is Spring Boot CLI is for a Groovy project. So, I stop in this step. If I want to learn Groovy, I may come back.<br>But, now, I more focus on the ability of Spring Boot. I still learn a lot in this article.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a href="http://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-installing-spring-boot.html" target="_blank" rel="external">Installing Spring Boot</a></li>
+<li><a href="https://www.gitbook.com/book/qbgbook/spring-boot-reference-guide-zh/details" target="_blank" rel="external">Spring-Boot-Reference-Guide</a></li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2017 Bill Lin<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

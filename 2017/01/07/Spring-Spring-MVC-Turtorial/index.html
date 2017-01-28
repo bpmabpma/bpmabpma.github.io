@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Happy new year, everybody!This will be my first post in 2017.This year, I decide to write a post in less two weeks.But, I don’t guarantee anything at ">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Bill Lin">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="[Spring]Spring MVC Tutorial based on Spring Boot and Thymeleaf (1) - Configuration, Routing, and Data Binding"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Bill ASAP"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>[Spring]Spring MVC Tutorial based on Spring Boot and Thymeleaf (1) - Configuration, Routing, and Data Binding - Bill ASAP</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Configurable Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/bpmabpma">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>[Spring]Spring MVC Tutorial based on Spring Boot and Thymeleaf (1) - Configuration, Routing, and Data Binding</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2017-01-07
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Spring/">#Spring</a> <a href="/tags/Spring-Boot/">#Spring Boot</a> <a href="/tags/Spring-MVC/">#Spring MVC</a> <a href="/tags/Thymeleaf/">#Thymeleaf</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Happy new year, everybody!<br>This will be my first post in 2017.<br>This year, I decide to write a post in less two weeks.<br>But, I don’t guarantee anything at all(no kidding XD).<br>Anyway, this post will note the basic part of Spring MVC.<br>Spring MVC is a very popular of web framework and it integrates with Spring Boot very well.<br>So, I would like to introduce it.<br>But, it has its drawback.<br>It can easy build a RESTful design API, but its performance is not good as other Web Service frameworks.<br>And, it doesn’t support Java EE Web Service standard.<br>But, I think it still a good way to implement a web service.<br>Maybe I will measure the performance with other web framework in the future.<br>However, if you want to build a traditional website(Generating HTML on server side),<br>Spring MVC is the best choice on the Java ecosystem.</p>
+<h2 id="Outline"><a href="#Outline" class="headerlink" title="Outline"></a>Outline</h2><p>I believe there is a huge number of Spring MVC tutorials.<br>I just write done by the main feature of Spring MVC.</p>
+<ul>
+<li>Configuration</li>
+<li>Template engine support</li>
+<li>Routing</li>
+<li>Data binding</li>
+<li>Validation</li>
+<li>Formating</li>
+<li>i18n</li>
+<li>Upload File</li>
+<li>Exception Handle</li>
+</ul>
+<p>Above items are the basic of Spring MVC.<br>Some topics I want to go deeper, so I will write done another post to explain them.<br>For this post, I will explain first four items configuration, template engine support, routing, data binding.</p>
+<h2 id="Configuration-and-Template-Engine"><a href="#Configuration-and-Template-Engine" class="headerlink" title="Configuration and Template Engine"></a>Configuration and Template Engine</h2><p>I talk these two topics together because you need to configuration template engine in the configuration file.<br>Configuration and template engine support are the complexity part of Spring MVC.<br>In Configuration, you have a variant way to do it. In Template Engine, you have plenty options to choice.<br>If you use Spring Boot, you don’t have to configure anything at all.<br>But, you still need to understand the configuration of Sping MVC.<br>The old school way to configure the Spring MVC is using the XML base way and configure the servlet(or filter?) in web.xml.<br>You can also use the java based way to configure the Spring MVC.<br>In Spring Boot, it provides the default configuration for you.<br>But, sometimes you still need to configure the Spring MVC for advanced features.<br>I’m so lazy to implement all possible configurations, so I just find some example for your reference.</p>
+<ul>
+<li><a href="http://www.mkyong.com/tutorials/spring-mvc-tutorials/" target="_blank" rel="external">Mkyong Spring MVC Tutorials</a></li>
+<li><a href="http://websystique.com/category/springmvc/" target="_blank" rel="external">WebSystique Spring MVC Example</a></li>
+</ul>
+<p>Anyway, I start a Spring Boot example from the previous post. <a href="https://github.com/bpmabpma/SpringBootExample/tree/first_spring_boot" target="_blank" rel="external">Example Link</a>.<br>Then, I create a new branch for this Spring MVC topic. <a href="https://github.com/bpmabpma/SpringBootExample/tree/spring_mvc" target="_blank" rel="external">Example Link</a>.<br>I show the key part of this example. If you want to see the detail, you can see my source on Github.</p>
+<p>Maven.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</div><div class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;</div><div class="line">         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</div><div class="line">         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</div><div class="line">    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</div><div class="line"></div><div class="line">    &lt;groupId&gt;tw.bill&lt;/groupId&gt;</div><div class="line">    &lt;artifactId&gt;example&lt;/artifactId&gt;</div><div class="line">    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</div><div class="line"></div><div class="line">    &lt;parent&gt;</div><div class="line">        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</div><div class="line">        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;</div><div class="line">        &lt;version&gt;1.4.2.RELEASE&lt;/version&gt;</div><div class="line">    &lt;/parent&gt;</div><div class="line"></div><div class="line">    &lt;dependencies&gt;</div><div class="line">        &lt;dependency&gt;</div><div class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</div><div class="line">            &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;</div><div class="line">        &lt;/dependency&gt;</div><div class="line">        &lt;dependency&gt;</div><div class="line">            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</div><div class="line">            &lt;artifactId&gt;spring-boot-devtools&lt;/artifactId&gt;</div><div class="line">            &lt;optional&gt;true&lt;/optional&gt;</div><div class="line">        &lt;/dependency&gt;</div><div class="line">    &lt;/dependencies&gt;</div><div class="line"></div><div class="line">    &lt;properties&gt;</div><div class="line">        &lt;java.version&gt;1.8&lt;/java.version&gt;</div><div class="line">        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;</div><div class="line">        &lt;thymeleaf.version&gt;3.0.0.RELEASE&lt;/thymeleaf.version&gt;</div><div class="line">        &lt;thymeleaf-layout-dialect.version&gt;2.0.0&lt;/thymeleaf-layout-dialect.version&gt;</div><div class="line">    &lt;/properties&gt;</div><div class="line"></div><div class="line">    &lt;build&gt;</div><div class="line">        &lt;plugins&gt;</div><div class="line">            &lt;plugin&gt;</div><div class="line">                &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</div><div class="line">                &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</div><div class="line">            &lt;/plugin&gt;</div><div class="line">        &lt;/plugins&gt;</div><div class="line">    &lt;/build&gt;</div><div class="line"></div><div class="line">&lt;/project&gt;</div></pre></td></tr></table></figure></p>
+<p>After Spring Boot 1.4, we don’t need to setup web application configuration java class.<br>But, you need to specify the version on the property. The default Thymeleaf version is still 2.</p>
+<p>I want to talk about template engine a little bit. There are many template engine, like Title, FreeMark, Velocity etc.<br>Actually, just using JSP and JSTL (spring also has JSTL) is also fine. But, I choose Thymeleaf anyway.<br>Thymeleaf has a lot of benefits, like more efficiency way cache page template, html layout.<br>Now, in Thymeleaf 3, it starts to support pure HTML layout, so it is a greater template engine for me.<br>But, in my opinion, you don’t need to learn everything can do the same feature.<br>Actually, in my work, I just only use JSP only, and I rarely write front end page in this moment.<br>But, I think this one my key tool for the front end page.</p>
+<h2 id="Routing-and-Data-Binding"><a href="#Routing-and-Data-Binding" class="headerlink" title="Routing and Data Binding"></a>Routing and Data Binding</h2><p>I make a simple to show how to routing and data binding by Spring MVC and Thymeleaf.<br>This example also shows the RESTful style in Thymeleaf.<br>I think it’s not always easy to design on the RESTful way.<br>But, it’s is great practice then.<br>I will show the Java controller class and Thymeleaf HTML template page.<br>I skip the service layer implementation if you are interesting you can go my Github to check out.</p>
+<p>Java controller<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> example.controller;</div><div class="line"></div><div class="line"><span class="keyword">import</span> example.dto.Post;</div><div class="line"><span class="keyword">import</span> example.service.api.PostService;</div><div class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</div><div class="line"><span class="keyword">import</span> org.springframework.stereotype.Controller;</div><div class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.*;</div><div class="line"><span class="keyword">import</span> org.springframework.web.servlet.ModelAndView;</div><div class="line"></div><div class="line"><span class="meta">@Controller</span></div><div class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/posts"</span>)</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PostController</span> </span>&#123;</div><div class="line">    <span class="meta">@Autowired</span></div><div class="line">    PostService postService;</div><div class="line"></div><div class="line">    <span class="meta">@GetMapping</span>(<span class="string">""</span>)</div><div class="line">    <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">listPost</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ModelAndView(<span class="string">"post/list"</span>, <span class="string">"posts"</span>, postService.findAll() );</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@GetMapping</span>(<span class="string">"/&#123;postId&#125;"</span>)</div><div class="line">    <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">showPost</span><span class="params">(@PathVariable(<span class="string">"postId"</span>)</span> <span class="keyword">long</span> postId) </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ModelAndView(<span class="string">"post/show"</span>, <span class="string">"post"</span>, postService.findOne(postId));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@GetMapping</span>(<span class="string">"/new"</span>)</div><div class="line">    <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">newPost</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ModelAndView(<span class="string">"post/new"</span>, <span class="string">"post"</span>, <span class="keyword">new</span> Post());</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@PostMapping</span>(<span class="string">""</span>)</div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">createPost</span><span class="params">(Post post)</span> </span>&#123;</div><div class="line">        postService.create(post);</div><div class="line">        <span class="keyword">return</span> <span class="string">"redirect:/posts"</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@GetMapping</span>(<span class="string">"/&#123;postId&#125;/edit"</span>)</div><div class="line">    <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">newPost</span><span class="params">(@PathVariable Long postId)</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ModelAndView(<span class="string">"post/edit"</span>, <span class="string">"post"</span>, postService.findOne(postId));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@PutMapping</span>(<span class="string">"/&#123;postId&#125;"</span>)</div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">updatePost</span><span class="params">(Post post)</span> </span>&#123;</div><div class="line">        postService.update(post);</div><div class="line">        <span class="keyword">return</span> <span class="string">"redirect:/posts"</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@DeleteMapping</span>(<span class="string">"/&#123;postId&#125;"</span>)</div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">deletePost</span><span class="params">(@PathVariable Long postId)</span> </span>&#123;</div><div class="line">        postService.delete(postId);</div><div class="line">        <span class="keyword">return</span> <span class="string">"redirect:/posts"</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>There are few annotations I want to mention. Controller, RequestMapping, Autowired, GetMapping, PostMapping, PutMapping, DeleteMapping, PathVariable.<br>Controller annotation you can tread it is a java bean. It means there is a Spring MVC controller bean.<br>You can also see another same type bean, like @Service, @Component. @Service means service layer bean. @Component means other types of java bean.<br>@RequestMapping is the routing annotation, and @GetMapping, @PostMapping, @PutMapping, and @DeleteMapping are the new type of routing annotation since Spring MVC 4.3.<br>@PathVaiable is for the path variable. Otherwise, @RequestParam is for Get parameters or submit value.<br>Model in the argument is an object stored the binding parameters, it can be an object or a map.<br>Because Spring MVC don’t support the multiple forms, it always returns one object at a time.</p>
+<p>Then, let’s see how to data binding on Thymeleaf.<br>We use post method be our example. You can see this page on <a href="http://localhost:8080/posts/new" target="_blank" rel="external">http://localhost:8080/posts/new</a></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span> <span class="attr">xmlns:th</span>=<span class="string">"http://www.w3.org/1999/xhtml"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>New Post<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">th:action</span>=<span class="string">"@&#123;/posts&#125;"</span> <span class="attr">th:object</span>=<span class="string">"$&#123;post&#125;"</span> <span class="attr">th:method</span>=<span class="string">"post"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"hidden"</span> <span class="attr">th:field</span>=<span class="string">"*&#123;id&#125;"</span>/&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"name"</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">th:field</span>=<span class="string">"*&#123;name&#125;"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"content"</span>&gt;</span>Content<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">th:field</span>=<span class="string">"*&#123;content&#125;"</span> /&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span>Confirm<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>The th:action binds the submit path.<br>The th:object binds the return data and sending data.<br>The th:method let Thymeleaf can supports other http methods, like put and delete.<br>The th:field binds the field value of the return object.<br>I hope in the future, I can explain more about Thymeleaf.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>I think I finish a basic Spring MVC example. Actually, it’s the key part of Spring MVC.<br>But, I want to talk more other handy stuff.<br>Next topic, I want to talk about the validation and formatting feature of Spring MVC.</p>
+<h2 id="reference"><a href="#reference" class="headerlink" title="reference"></a>reference</h2><ul>
+<li><a href="http://www.tuicool.com/articles/ayeQ3qn" target="_blank" rel="external">Thymeleaf 3 迁移指南</a></li>
+<li><a href="http://www.iteye.com/topic/1144720" target="_blank" rel="external">主题：77. Spring Boot Use Thymeleaf 3【从零开始学Spring Boot】</a></li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2017 Bill Lin<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
