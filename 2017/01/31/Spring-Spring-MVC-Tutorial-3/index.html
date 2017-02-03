@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="There are few ways to implement the formatting.You can use Spring MVC Formatter and Converter class, Thymeleaf utility objects, or the Spring formatti">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Bill Lin">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="[Spring]Spring MVC Tutorial based on Spring Boot and Thymeleaf (3) - Formatting"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Bill ASAP"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>[Spring]Spring MVC Tutorial based on Spring Boot and Thymeleaf (3) - Formatting - Bill ASAP</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Configurable Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/bpmabpma">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>[Spring]Spring MVC Tutorial based on Spring Boot and Thymeleaf (3) - Formatting</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2017-01-31
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Spring/">#Spring</a> <a href="/tags/Spring-Boot/">#Spring Boot</a> <a href="/tags/Spring-MVC/">#Spring MVC</a> <a href="/tags/Thymeleaf/">#Thymeleaf</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>There are few ways to implement the formatting.<br>You can use Spring MVC Formatter and Converter class, Thymeleaf utility objects, or the Spring formatting annotations.<br>I will introduce these methods. Before that let me think about which is the best or the most convenient way to implement formatting.<br>For now, I will choose the Spring formatting annotations.<br>Formatter and Converter classes are the second choices. Thymeleaf utility objects are last.<br>I will define the annotation on DTOs, so this is a good way to implement.<br>Another topic, DTOs sometimes are almost as same as Entity objects.<br>But, I still treat them as different.<br>There are few reasons why I do this way.<br>The DTO is the page value, and it isn’t the database value.<br>But, there are still have a lot of problems to be solved.<br>You need to convert the value between DTO and Entity.<br>Which layer do you need to handle conversion on?<br>The answers are using Convert API and service layer by my recent result.<br>Anyway, let keep talk about formatting.</p>
+<h2 id="Formatter-and-Converter"><a href="#Formatter-and-Converter" class="headerlink" title="Formatter and Converter"></a>Formatter and Converter</h2><p>Before I start this topic, I try to implement this way in Thymeleaf.<br>Look at this issue <a href="https://github.com/thymeleaf/thymeleaf-spring/issues/19" target="_blank" rel="external">Should Thymeleaf use the ConversionService of Spring for any attribute processors?</a></p>
+<p>What is the different between Formatter and Converter?<br>The key different is Formatter only convert Spring to Java Type and back.<br>Converter can convert any types and back.<br>So, Formatter is only for web layer. Converter can work on anywhere.<br><a href="http://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/spring-define-formatter/" target="_blank" rel="external">Formatter Example</a>.<br><a href="http://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/spring-mvc-custom-formatter/" target="_blank" rel="external">InitBinding Example</a><br><a href="https://www.petrikainulainen.net/programming/spring-framework/spring-from-the-trenches-using-type-converters-with-spring-mvc/" target="_blank" rel="external">Converter Example</a>.</p>
+<p>We can find out the Converter cannot work on InitBinding.<br>If you want to format globally, you should set up the Web Configuration.<br>For now, I think Formatter are more suitable for my requirement.<br>But, I still don’t know how to put the converter in another place, like service layer.<br>There is a class called PrropertiesEditor on InitBinding, but I think we don’t have the opportunity to use it.</p>
+<p>Let me show I implementation</p>
+<p>WebMvcConfigurerAdapter.java<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> example.config;</div><div class="line"></div><div class="line"><span class="keyword">import</span> example.formatter.AddressFormatter;</div><div class="line"><span class="keyword">import</span> org.slf4j.Logger;</div><div class="line"><span class="keyword">import</span> org.slf4j.LoggerFactory;</div><div class="line"><span class="keyword">import</span> org.springframework.context.annotation.Configuration;</div><div class="line"><span class="keyword">import</span> org.springframework.format.FormatterRegistry;</div><div class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.EnableWebMvc;</div><div class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;</div><div class="line"></div><div class="line"><span class="meta">@EnableWebMvc</span></div><div class="line"><span class="meta">@Configuration</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebConfig</span> <span class="keyword">extends</span> <span class="title">WebMvcConfigurerAdapter</span> </span>&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger logger = LoggerFactory.getLogger(WebConfig.class);</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addFormatters</span> <span class="params">(FormatterRegistry registry)</span> </span>&#123;</div><div class="line">        AddressFormatter addressFormatter = <span class="keyword">new</span> AddressFormatter();</div><div class="line">        addressFormatter.setStyle(AddressFormatter.Style.REGION);</div><div class="line">        registry.addFormatter(addressFormatter);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>AddressFormatter.java<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> example.formatter;</div><div class="line"></div><div class="line"><span class="keyword">import</span> example.config.WebConfig;</div><div class="line"><span class="keyword">import</span> example.dto.Address;</div><div class="line"><span class="keyword">import</span> org.slf4j.Logger;</div><div class="line"><span class="keyword">import</span> org.slf4j.LoggerFactory;</div><div class="line"><span class="keyword">import</span> org.springframework.format.Formatter;</div><div class="line"><span class="keyword">import</span> java.text.ParseException;</div><div class="line"><span class="keyword">import</span> java.util.Locale;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AddressFormatter</span> <span class="keyword">implements</span> <span class="title">Formatter</span>&lt;<span class="title">Address</span>&gt; </span>&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger logger = LoggerFactory.getLogger(AddressFormatter.class);</div><div class="line"></div><div class="line">    <span class="keyword">private</span> Style style = Style.FULL;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setStyle</span> <span class="params">(Style style)</span> </span>&#123;</div><div class="line">        <span class="keyword">this</span>.style = style;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> Address <span class="title">parse</span> <span class="params">(String text, Locale locale)</span> <span class="keyword">throws</span> ParseException </span>&#123;</div><div class="line">        logger.info(<span class="string">"enter, text:&#123;&#125;"</span>, text);</div><div class="line"></div><div class="line">        <span class="keyword">if</span> (text != <span class="keyword">null</span>) &#123;</div><div class="line">            String[] parts = text.split(<span class="string">","</span>);</div><div class="line">            <span class="keyword">if</span> (style == Style.FULL &amp;&amp; parts.length == <span class="number">4</span>) &#123;</div><div class="line">                Address address = <span class="keyword">new</span> Address();</div><div class="line">                address.setStreet(parts[<span class="number">0</span>].trim());</div><div class="line">                address.setCity(parts[<span class="number">1</span>].trim());</div><div class="line">                address.setZipCode(parts[<span class="number">2</span>].trim());</div><div class="line">                address.setCounty(parts[<span class="number">3</span>].trim());</div><div class="line">                <span class="keyword">return</span> address;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (style == Style.REGION &amp;&amp; parts.length == <span class="number">3</span>) &#123;</div><div class="line">                Address address = <span class="keyword">new</span> Address();</div><div class="line">                address.setCity(parts[<span class="number">0</span>].trim());</div><div class="line">                address.setZipCode(parts[<span class="number">1</span>].trim());</div><div class="line">                address.setCounty(parts[<span class="number">2</span>].trim());</div><div class="line">                <span class="keyword">return</span> address;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">print</span> <span class="params">(Address a, Locale l)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (a == <span class="keyword">null</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="string">""</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">switch</span> (style) &#123;</div><div class="line">            <span class="keyword">case</span> FULL:</div><div class="line">                <span class="keyword">return</span> String.format(l, <span class="string">"%s, %s, %s, %s"</span>, a.getStreet(), a.getCity(),</div><div class="line">                        a.getZipCode(), a.getCounty());</div><div class="line">            <span class="keyword">case</span> REGION:</div><div class="line">                <span class="keyword">return</span> String.format(l, <span class="string">"%s, %s, %s"</span>, a.getCity(), a.getZipCode(),</div><div class="line">                        a.getCounty());</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        logger.info(<span class="string">"exit, result:&#123;&#125;"</span>, a.toString());</div><div class="line">        <span class="keyword">return</span> a.toString();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">public</span> <span class="keyword">enum</span> Style &#123;</div><div class="line">        FULL,</div><div class="line">        REGION</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Customer.java<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Customer</span> </span>&#123;</div><div class="line">    <span class="comment">// old part</span></div><div class="line"></div><div class="line">    <span class="keyword">private</span> Address address;</div><div class="line"></div><div class="line">   <span class="comment">// getter and setter</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>custSave.html<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>Address:<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">th:field</span>=<span class="string">"*&#123;address&#125;"</span> /&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">th:if</span>=<span class="string">"$&#123;#fields.hasErrors('address')&#125;"</span> <span class="attr">th:errors</span>=<span class="string">"*&#123;address&#125;"</span>  <span class="attr">class</span>=<span class="string">"error"</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>custSaveSuccess.html<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">strong</span>&gt;</span>Customer Address:<span class="tag">&lt;<span class="name">span</span> <span class="attr">th:text</span>=<span class="string">"$&#123;&#123;customer.address&#125;&#125;"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="Formatting-Annotations"><a href="#Formatting-Annotations" class="headerlink" title="Formatting Annotations"></a>Formatting Annotations</h2><p>There are many formatting classes, like DateTimeFormat, NumberFormat, CurrencyStyleFormatter, NumberStyleFormatter, PercentStyleFormatter, DateFormatter.</p>
+<p>They are surely the most common formatting classes we will be used.<br>You also can customize your own formatting annotations.<br><a href="http://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/spring-create-formatter-annotation/" target="_blank" rel="external">Customize Formatting Annotations.</a></p>
+<h2 id="Thymeleaf-Formatting"><a href="#Thymeleaf-Formatting" class="headerlink" title="Thymeleaf Formatting"></a>Thymeleaf Formatting</h2><p>You can call some utility object for formatting.<br><a href="http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#standard-expression-syntax" target="_blank" rel="external">Thymeleaf - 4 Standard Expression Syntax</a><br>There is an example.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line">  Today is: <span class="tag">&lt;<span class="name">span</span> <span class="attr">th:text</span>=<span class="string">"$&#123;#calendars.format(today,'dd MMMM yyyy')&#125;"</span>&gt;</span>13 May 2011<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In this post, I still implement the formatting implementation in Thymeleaf.<br>My Github example (project link)[].<br>But, I think I still count this post is finished.<br>Next Spring MVC tutorial, I will talk about i18n.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2017 Bill Lin<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
