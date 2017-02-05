@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Internationalization is seemed very easy, but there are many solutions (or classes) to choice.The meaning of i18n and l10n is no different for me.Beca">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Bill Lin">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="[Spring]Spring MVC Tutorial based on Spring Boot and Thymeleaf (3) - Internationalization(i18n)"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Bill ASAP"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>[Spring]Spring MVC Tutorial based on Spring Boot and Thymeleaf (3) - Internationalization(i18n) - Bill ASAP</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Configurable Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/bpmabpma">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>[Spring]Spring MVC Tutorial based on Spring Boot and Thymeleaf (3) - Internationalization(i18n)</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2017-02-04
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Spring/">#Spring</a> <a href="/tags/Spring-MVC/">#Spring MVC</a> <a href="/tags/Thymeleaf/">#Thymeleaf</a> <a href="/tags/Spring-Boot/">#Spring Boot</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Internationalization is seemed very easy, but there are many solutions (or classes) to choice.<br>The meaning of i18n and l10n is no different for me.<br>Because they just support the multiple languages for different locations.<br>Anyway, on this topic, I want to achieve some goals which are implementing i18n solution and the argument if i18n.</p>
+<h2 id="What-is-the-Different-between-i18n-and-l10n"><a href="#What-is-the-Different-between-i18n-and-l10n" class="headerlink" title="What is the Different between i18n and l10n"></a>What is the Different between i18n and l10n</h2><p>Let StackOverflow explain to us!<br><a href="http://stackoverflow.com/questions/754520/what-is-the-actual-differences-between-i18n-l10n-g11n-and-specifically-what-does" target="_blank" rel="external">What are the actual differences between I18n/L10n/G11n and specifically what does each mean for development? [duplicate]</a></p>
+<h2 id="Implement-i18n"><a href="#Implement-i18n" class="headerlink" title="Implement i18n"></a>Implement i18n</h2><p>My reference example is below.<br><a href="http://memorynotfound.com/spring-mvc-internationalization-i18n-example/" target="_blank" rel="external">Spring MVC Internationalization I18n Example</a><br>But, my example is always different because they are based on Spring Boot and Thymeleaf.<br>There are few things need to setup, e.g. MessageSource, LocaleResolver, and LocaleChangeInterceptor.<br>In Spring Boot, you don’t need to setup MessageSource Bean configuration. Spring Boot supports the property configuration.<br>It uses ReloadableResourceBundleMessageSource to implement to the message file loading.</p>
+<p>application.properties<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">spring.messages.basename=file:messages</div><div class="line">spring.messages.cache-seconds=30</div></pre></td></tr></table></figure></p>
+<p>Then, we need to set up the LocaleResolver and the LocaleChangeInterceptor.<br>LocaleResolver has three type of class, e.g. CookieLocaleResolver, SessionLocaleResolver, and AcceptHeaderLocaleResolver.<br>It is used for determining the locale of the request based on which value source.<br>AcceptHeaderLocaleResolver should be the default choice, but I think CookieLocaleResolver is a better choice.<br>CookieLocaleResolver will check if there is no default locale and cookie setup, it will use the accept header value.<br>LocaleChangeInterceptor just enables and sets up the parameter name for changing the locale.</p>
+<p>WebConfig.java<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> example.formatter.AddressFormatter;</div><div class="line"><span class="keyword">import</span> org.slf4j.Logger;</div><div class="line"><span class="keyword">import</span> org.slf4j.LoggerFactory;</div><div class="line"><span class="keyword">import</span> org.springframework.context.annotation.Bean;</div><div class="line"><span class="keyword">import</span> org.springframework.context.annotation.Configuration;</div><div class="line"><span class="keyword">import</span> org.springframework.format.FormatterRegistry;</div><div class="line"><span class="keyword">import</span> org.springframework.web.servlet.LocaleResolver;</div><div class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.EnableWebMvc;</div><div class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.InterceptorRegistry;</div><div class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;</div><div class="line"><span class="keyword">import</span> org.springframework.web.servlet.i18n.CookieLocaleResolver;</div><div class="line"><span class="keyword">import</span> org.springframework.web.servlet.i18n.LocaleChangeInterceptor;</div><div class="line"></div><div class="line"><span class="meta">@EnableWebMvc</span></div><div class="line"><span class="meta">@Configuration</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebConfig</span> <span class="keyword">extends</span> <span class="title">WebMvcConfigurerAdapter</span> </span>&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger logger = LoggerFactory.getLogger(WebConfig.class);</div><div class="line"></div><div class="line">    <span class="comment">// ----- formatter configuration -----</span></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addFormatters</span> <span class="params">(FormatterRegistry registry)</span> </span>&#123;</div><div class="line">        AddressFormatter addressFormatter = <span class="keyword">new</span> AddressFormatter();</div><div class="line">        addressFormatter.setStyle(AddressFormatter.Style.REGION);</div><div class="line">        registry.addFormatter(addressFormatter);</div><div class="line">    &#125;</div><div class="line">    <span class="comment">// ----- formatter configuration -----</span></div><div class="line"></div><div class="line"></div><div class="line">    <span class="comment">// ----- i18n configuration -----</span></div><div class="line">    <span class="meta">@Bean</span></div><div class="line">    <span class="function"><span class="keyword">public</span> LocaleResolver <span class="title">localeResolver</span><span class="params">()</span></span>&#123;</div><div class="line">        CookieLocaleResolver resolver = <span class="keyword">new</span> CookieLocaleResolver();</div><div class="line"><span class="comment">//        resolver.setDefaultLocale(new Locale("en"));</span></div><div class="line">        resolver.setCookieName(<span class="string">"myLocaleCookie"</span>);</div><div class="line">        resolver.setCookieMaxAge(<span class="number">4800</span>);</div><div class="line">        <span class="keyword">return</span> resolver;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addInterceptors</span><span class="params">(InterceptorRegistry registry)</span> </span>&#123;</div><div class="line">        LocaleChangeInterceptor interceptor = <span class="keyword">new</span> LocaleChangeInterceptor();</div><div class="line">        interceptor.setParamName(<span class="string">"lang"</span>);</div><div class="line">        registry.addInterceptor(interceptor);</div><div class="line">    &#125;</div><div class="line">    <span class="comment">// ----- i18n configuration -----</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Then, if you access the page first time, you will setup the locale based on the accept header.<br>You can change the locale by using the lang parameter.<br>For example, if the URL is <a href="http://localhost:9000/emp/save?lang=zh" target="_blank" rel="external">http://localhost:9000/emp/save?lang=zh</a>, the locale will be changed to default.<br>If the URL is <a href="http://localhost:9000/emp/save?lang=zh" target="_blank" rel="external">http://localhost:9000/emp/save?lang=zh</a>, the locale will be changed to zh_TW.</p>
+<h2 id="Message-Format"><a href="#Message-Format" class="headerlink" title="Message Format"></a>Message Format</h2><p>This topic relates to the validation. The validation also can setup the message format automatically.<br>Index 0 usually is filed name, you also can set up the field name on the message property file.<br>But, only the validation annotation can setup the parameters.</p>
+<p>messages_zh_TW.properties<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">#application defined error messsages</div><div class="line">id.required=雇員編號是必須的</div><div class="line">name.required=Employee Name is required</div><div class="line">role.required=Employee Role is required</div><div class="line">negativeValue=&#123;0&#125; can&apos;t be negative or zero</div><div class="line"></div><div class="line">#Spring framework error messages to be used when conversion from form data to bean fails</div><div class="line">typeMismatch.int=&#123;0&#125; Value must be an integer</div><div class="line">typeMismatch.java.lang.Integer=&#123;0&#125; must be an integer</div><div class="line">typeMismatch=&#123;0&#125; is of invalid format</div><div class="line"></div><div class="line">#application messages for annotations, &#123;ValidationClass&#125;.&#123;modelObjectName&#125;.&#123;field&#125;</div><div class="line">#the &#123;0&#125; is field name, other fields are in alphabatical order, max and then min</div><div class="line">customer.name=名稱</div><div class="line">Size.customer.name=Customer &#123;0&#125; should be between &#123;2&#125; and &#123;1&#125; characters long</div><div class="line">NotEmpty.customer.email=Email is a required field</div><div class="line">NotNull.customer.age=Customer &#123;0&#125; should be in years</div><div class="line"></div><div class="line">#Generic annotation class messages</div><div class="line">Email=Email address is not valid</div><div class="line">NotNull=This is a required field</div><div class="line">NotEmpty=This is a required field</div><div class="line">Past=Date should be Past</div><div class="line"></div><div class="line">#Custom validation annotation</div><div class="line">Phone=Invalid format, valid formats are 1234567890, 123-456-7890 x1234</div></pre></td></tr></table></figure></p>
+<h2 id="External-Message-properties"><a href="#External-Message-properties" class="headerlink" title="External Message properties"></a>External Message properties</h2><p>Check this StackOverflow article <a href="http://stackoverflow.com/questions/35870015/how-to-externalize-i18n-properties-files-in-spring-boot-applications" target="_blank" rel="external">External Resource Properties</a>.</p>
+<ul>
+<li>classpath:messages - will always look up embeded message_xxx files</li>
+<li>classpath:/messages and classpath:message are equivalent</li>
+<li>file:messages - will look up jar’s external current directory e.g. ./message_en.properties &lt;- this is what you want</li>
+<li>file:/messages - you have to put your message files to root “/“ to make it work</li>
+<li>use notation file:config/messages if you need to put in config folder together with your ./config/application.properties</li>
+</ul>
+<p>I have counted some failure in this step. The configuration, file:messages, is based on the current directory of java -jar command.<br>So, I try to use the better way extract the message resource.</p>
+<p>application-prod.properties<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">spring.messages.basename=file:messages</div><div class="line">spring.messages.cache-seconds=30</div></pre></td></tr></table></figure></p>
+<p>Then, I use the command to specify the spring profile.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">java -jar -Dspring.profiles.active=prod example-1.0-SNAPSHOT.jar</div></pre></td></tr></table></figure>
+<p>But, there is another problem, I don’t want the message property files packed into the jar file.<br>An easy way to do it is to use Maven to exclude this file. And move the message property files in the target folder.</p>
+<p>pom.xml<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></div><div class="line">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></div><div class="line">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</div><div class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>tw.bill<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>example<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.4.2.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-thymeleaf<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-devtools<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">properties</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">java.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">java.version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">thymeleaf.version</span>&gt;</span>3.0.0.RELEASE<span class="tag">&lt;/<span class="name">thymeleaf.version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">thymeleaf-layout-dialect.version</span>&gt;</span>2.0.0<span class="tag">&lt;/<span class="name">thymeleaf-layout-dialect.version</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">build</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">resources</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">resource</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">excludes</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>**/messages.properties<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>**/messages_zh_TW.properties<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">excludes</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></div><div class="line"></div><div class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-resources-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">                <span class="comment">&lt;!--&lt;version&gt;3.0.2&lt;/version&gt;--&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">executions</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">execution</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">id</span>&gt;</span>copy-resources<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">                        <span class="comment">&lt;!-- here the phase you need --&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">phase</span>&gt;</span>validate<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">goals</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;<span class="name">goal</span>&gt;</span>copy-resources<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>$&#123;basedir&#125;/target<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;<span class="name">resources</span>&gt;</span></div><div class="line">                                <span class="tag">&lt;<span class="name">resource</span>&gt;</span></div><div class="line">                                    <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></div><div class="line">                                    <span class="tag">&lt;<span class="name">includes</span>&gt;</span></div><div class="line">                                        <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/messages.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></div><div class="line">                                        <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/messages_zh_TW.properties<span class="tag">&lt;/<span class="name">include</span>&gt;</span></div><div class="line">                                    <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></div><div class="line">                                <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></div><div class="line">                            <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></div><div class="line">                        <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">build</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>Package the jar, and run it.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">mvn clean package</div><div class="line"><span class="built_in">cd</span> target</div><div class="line">java -jar -Dspring.profiles.active=prod example-1.0-SNAPSHOT.jar</div></pre></td></tr></table></figure></p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p><a href="">My source code link</a>.<br>Next topic is exception handling of Spring MVC.</p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html" target="_blank" rel="external">The application properties</a><br><a href="http://stackoverflow.com/questions/35870015/how-to-externalize-i18n-properties-files-in-spring-boot-applications" target="_blank" rel="external">External Resource Properties</a></p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2017 Bill Lin<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
